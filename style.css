@@ -1,0 +1,109 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #ecf2f8;
+  margin: 0;
+}
+.box {
+  width: 80%;
+  height: 572px;
+  background-color: #ecf2f8;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
+  grid-row: repeat(4, minmax(266px, 1fr));
+  gap: 10px;
+}
+.child {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.child1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  background-color: #733fc8;
+  position: relative;
+}
+.child2 {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: #48556a;
+}
+.child3 {
+  grid-row: 1 / span 2;
+  grid-column: 4;
+  background-color: white;
+}
+
+.child4 {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: white;
+}
+.child5 {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  background-color: #19202d;
+  color: white;
+}
+.bigtext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.smalltext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.text1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+.text2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ad94d5;
+}
+.text3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c8ccd2;
+}
+.text4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #48556a;
+}
+.tinytext1 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0 0 5% 0;
+}
+.tinytext2 {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+}
+#Test{
+  position:  absolute;
+  right: 20%;
+  top: 0;
+  z-index: 0;
+}
+
